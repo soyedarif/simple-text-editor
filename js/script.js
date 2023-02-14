@@ -48,8 +48,8 @@ document.getElementById('btn-casing').addEventListener('click',function(){
     textField.classList.toggle('font-casing');
     this.classList.toggle('active');
 })
-const fontSize=document.getElementById('fontSizeDD');
-fontSize.onchange=function(){
-    const textBox=document.getElementById('text-field');
-    textBox.style.fontSize=this.value+'px';
-}
+
+document.getElementById('fontSizeDD').addEventListener('input',function(){
+    const textField=document.getElementById('text-field');
+    textField.style.fontSize=this.value+'px';
+})
