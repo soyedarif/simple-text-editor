@@ -1,0 +1,17 @@
+.bold{
+    font-weight: 700;
+}
+.italic{
+    font-style: italic;
+}
+.underline{
+    text-decoration: underline;
+}
+.font-casing{
+    text-transform: uppercase;
+}
+.active{
+    background-color: #a7f3d0;
+    color:#333;
+    border-radius: 4px;
+}

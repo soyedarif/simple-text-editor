@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/d790b67ebf.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style/style.css" />
+  </head>
+  <body class="bg-emerald-300">
+    <main class="container mx-auto bg-gradient-to-b from-emerald-200 p-4">
+      <h1 class="font-medium text-6xl text-center pt-16 mb-6 font-mono">My Text Editor</h1>
+      <div class="bg-gradient-to-b from-emerald-400 w-11/12 mx-auto p-4">
+        <div class="flex justify-between mb-4 p-3 items-center">
+          <div class="flex gap-6 ml-4">
+            <button id="btn-bold" class=" p-2"><strong>B</strong></button>
+            <button id="btn-italic" class=" p-2"><em class="font-serif">I</em></button>
+            <button id="btn-underline" class=" p-2"><u class="font-serif">U</u></button>
+          </div>
+          <div class="flex gap-6 ml-4">
+            <button id="btn-left" title="left"><i class="fa-solid fa-align-left  p-2"></i></button>
+            <button id="btn-center" title="center"><i class="fa-solid fa-align-center  p-2"></i></button>
+            <button id="btn-right" title="right"><i class="fa-solid fa-align-right  p-2"></i></button>
+            <button id="btn-align" title="wrap"><i class="fa-solid fa-align-justify  p-2"></i></button>
+          </div>
+          <div class="flex gap-4 ml-4">
+            <div>
+                <input type="color" name="" id="color-input">
+            </div>
+            <div>
+              <button id="btn-casing" class=" p-2"><strong ><span>a</span><span>A</span></strong></button>
+            </div>
+            <div>
+              <select id="fontSizeDD">
+                <option value="12">12</option>
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+                <option value="20">20</option>
+                <option value="22">22</option>
+                <option value="24">24</option>
+                <option value="26">26</option>
+                <option value="28">28</option>
+                <option value="30">30</option>
+                <option value="32">32</option>
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <hr class="border-spacing-1 border-indigo-500 w-11/12 mx-auto mb-3" />
+        <textarea name="" id="text-field" class="focus:outline-none rounded-lg  w-full p-4 text-base" cols="30" rows="15"></textarea>
+      </div>
+    </main>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
